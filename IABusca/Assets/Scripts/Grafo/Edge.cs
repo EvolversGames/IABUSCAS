@@ -7,14 +7,17 @@ using TMPro;
 public class Edge : MonoBehaviour
 {
     public Node node;
-    private int distance;
-
-
+    public int distance;
+    private int distanceStar=0;
     public Edge(Node node)
     {
         this.node = node;
     }
 
+    public int GetDistanceAStar() 
+    {
+        return distanceStar = distance + node.distanceTarget;
+    }
     public Node getNode() 
     {
         return node;

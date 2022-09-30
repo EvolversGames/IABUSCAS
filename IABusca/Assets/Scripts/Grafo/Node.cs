@@ -6,6 +6,7 @@ public class Node : MonoBehaviour
 {
     public string nameNode;
     public bool isVisited;
+    public int distanceTarget;
     public List<Edge> edges;
     public SpriteRenderer spriteRenderer;
     public Color color;
@@ -20,9 +21,6 @@ public class Node : MonoBehaviour
         isVisited       = false;
        
     }
-
-
-
     public void AddEdges(Edge edge)
     {
         edges.Add(edge);
